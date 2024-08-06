@@ -1,0 +1,69 @@
+#result-page {
+  display: none;
+  text-align: left;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#result-page h1 {
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+#result-page h3 {
+  margin-bottom: 5px;
+  font-weight: bolder;
+  color: red;
+}
+#result-page h5 {
+  margin-bottom: 15px;
+}
+
+#result {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#result-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+button.kakao,
+button#restart-button {
+  height: 30px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  min-width: 60px;
+  white-space: nowrap;
+  padding: 5px 20px 8px 20px;
+}
+
+button.kakao {
+  background-color: #ffb700;
+  border: 1px solid #ffb700;
+  color: #000;
+}
+
+button.kakao:hover {
+  opacity: 50%;
+}
+
+/* Media query for small screens */
+@media (max-width: 442px) {
+  #result-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button.kakao,
+  button#restart-button {
+    width: 100%; /* Make buttons full width */
+  }
+}
